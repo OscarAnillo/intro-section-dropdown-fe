@@ -33,16 +33,18 @@ export default function NavBarComponent() {
                     src="/images/icon-arrow-up.svg"
                     alt=""
                     onClick={() => setShowMenuFeatures(!showMenuFeatures)}
+                    style={{paddingLeft:'1em'}}
                   />
                 ) : (
                   <img
                     src="/images/icon-arrow-down.svg"
                     alt=""
                     onClick={() => setShowMenuFeatures(!showMenuFeatures)}
+                    style={{paddingLeft:'1em'}}
                   />
                 )}
                 {showMenuFeatures && (
-                  <ul>
+                  <ul className="test">
                     <li>
                       <img src="/images/icon-todo.svg" alt="" /> Todo List
                     </li>
@@ -67,12 +69,14 @@ export default function NavBarComponent() {
                     src="/images/icon-arrow-up.svg"
                     alt=""
                     onClick={() => setShowMenuHistory(!showMenuHistory)}
+                    style={{paddingLeft:'1em'}}
                   />
                 ) : (
                   <img
                     src="/images/icon-arrow-down.svg"
                     alt=""
                     onClick={() => setShowMenuHistory(!showMenuHistory)}
+                    style={{paddingLeft:'1em'}}
                   />
                 )}
                 {showMenuHistory && (

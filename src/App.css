@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue:wght@500;700&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +10,12 @@
 
 .App {
   text-align: center;
+  font-family: 'Epilogue', sans-serif;
   position: relative;
 }
 
 /* NavBar Component */
 .section-nav {
-  /* border: 1px solid red; */
   margin-top: 25px;
 }
 .nav-row {
@@ -23,7 +26,6 @@
   z-index: -1;
 }
 .inner-menu {
-  border: 1px solid red;
   height: 100vh;
   position: absolute;
   top: -25px;
@@ -31,18 +33,34 @@
   width: 60%;
   z-index: 100;
   background: #fff;
+  transition: all 1s ease;
 }
 .inner-menu-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 90%;
   margin: auto;
   text-align: left;
   position: relative;
   top: 10%;
+  color: hsl(0, 0%, 41%);
+  transition: all 1s ease;
 }
 .inner-menu-container .close-icon {
   position: absolute;
   top: -68px;
   right: 6%;
   z-index: 99;
+}
+.inner-menu-container ul {
+  padding-bottom: 1em;
+}
+.inner-menu-container .test {
+  text-align: center;
+}
+.inner-menu-container .test li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  margin: 1em auto;
 }
