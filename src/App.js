@@ -1,11 +1,11 @@
 
 import './App.css';
+import NavBarComponent from './components/nav-component';
 
 function App() {
   return (
     <div className="App">
-      <h2>Oscar Anillo</h2>
-      <p>Web UI Developer</p>
+      <NavBarComponent />
     </div>
   );
 }
