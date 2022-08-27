@@ -1,8 +1,48 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 .App {
   text-align: center;
+  position: relative;
+}
+
+/* NavBar Component */
+.section-nav {
+  /* border: 1px solid red; */
+  margin-top: 25px;
+}
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  z-index: -1;
+}
+.inner-menu {
+  border: 1px solid red;
+  height: 100vh;
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  width: 60%;
+  z-index: 100;
+  background: #fff;
+}
+.inner-menu-container {
+  border: 1px solid red;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  top: 10%;
+}
+.inner-menu-container .close-icon {
+  position: absolute;
+  top: -68px;
+  right: 6%;
+  z-index: 99;
 }
