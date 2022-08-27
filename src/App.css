@@ -54,13 +54,23 @@
 .inner-menu-container ul {
   padding-bottom: 1em;
 }
-.inner-menu-container .test {
+.inner-menu-container .features {
   text-align: center;
 }
-.inner-menu-container .test li {
+.inner-menu-container .features li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 55%;
   margin: 1em auto;
+}
+.inner-menu-container .company{
+  text-align: center;
+  padding-bottom: 0px;
+}
+.inner-menu-container .company li {
+  margin: 1.5em auto;
+  width: 55%;
+  text-align: left;
+
 }

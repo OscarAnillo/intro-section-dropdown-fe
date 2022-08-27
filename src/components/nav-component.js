@@ -44,7 +44,7 @@ export default function NavBarComponent() {
                   />
                 )}
                 {showMenuFeatures && (
-                  <ul className="test">
+                  <ul className="features">
                     <li>
                       <img src="/images/icon-todo.svg" alt="" /> Todo List
                     </li>
@@ -69,18 +69,18 @@ export default function NavBarComponent() {
                     src="/images/icon-arrow-up.svg"
                     alt=""
                     onClick={() => setShowMenuHistory(!showMenuHistory)}
-                    style={{paddingLeft:'1em'}}
+                    style={{paddingLeft:'.8em'}}
                   />
                 ) : (
                   <img
                     src="/images/icon-arrow-down.svg"
                     alt=""
                     onClick={() => setShowMenuHistory(!showMenuHistory)}
-                    style={{paddingLeft:'1em'}}
+                    style={{paddingLeft:'.8em'}}
                   />
                 )}
                 {showMenuHistory && (
-                  <ul>
+                  <ul className="company">
                     <li>History</li>
                     <li>Our Team</li>
                     <li>Blog</li>
