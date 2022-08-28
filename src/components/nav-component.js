@@ -89,10 +89,10 @@ export default function NavBarComponent() {
               </li>
             </ul>
             <ul>
-              <li>Careers</li>
+              <li className="career">Careers</li>
               <li>About</li>
             </ul>
-            <div>
+            <div className="login">
               <p>Login</p>
               <button>Register</button>
             </div>
