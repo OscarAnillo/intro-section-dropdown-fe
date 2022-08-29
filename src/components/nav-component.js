@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function NavBarComponent() {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,6 +8,14 @@ export default function NavBarComponent() {
   const clickHandler = () => {
     setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    if(showMenu){
+      document.body.style.background = 'rgb(80, 80, 80)';
+    } else {
+      document.body.style.background = '#fff'
+    }
+  })
 
   return (
     <section className="section-nav">
