@@ -1,0 +1,15 @@
+export default function TextComponent(){
+    return (
+        <div className="text">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button>Learn more</button>
+            <div className="brands">
+                <img src="/images/client-databiz.svg" alt="" />
+                <img src="/images/client-audiophile.svg" alt="" />
+                <img src="/images/client-meet.svg" alt="" />
+                <img src="/images/client-maker.svg" alt="" />
+            </div>
+        </div>
+    )
+}

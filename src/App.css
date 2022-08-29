@@ -1,8 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue:wght@500;700&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 .App {
   text-align: center;
+  font-family: 'Epilogue', sans-serif;
+  position: relative;
+}
+
+/* NavBar Component */
+.section-nav {
+  margin-top: 25px;
+}
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.inner-menu {
+  height: 100vh;
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  width: 65%;
+  background: #fff;
+  transition: all 1s ease;
+}
+.inner-menu-container {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  top: 10%;
+  color: hsl(0, 0%, 41%);
+  transition: all 1s ease;
+}
+.inner-menu-container .close-icon {
+  position: absolute;
+  top: -68px;
+  right: 6%;
+  z-index: 99;
+}
+.inner-menu-container ul {
+  padding-bottom: 1.5em;
+}
+.inner-menu-container .features {
+  text-align: center;
+}
+.inner-menu-container .features li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  margin: 1em auto;
+}
+.inner-menu-container .company{
+  text-align: center;
+  padding-bottom: 0px;
+}
+.inner-menu-container .company li {
+  margin: 1.5em auto;
+  width: 55%;
+  text-align: left;
+}
+.inner-menu-container .career {
+  margin-bottom: 1.5em;
+}
+.inner-menu-container .login {
+  text-align: center;
+  padding: 1em 0;
+}
+.inner-menu-container .login p {
+  padding-bottom: .7em;
+}
+.inner-menu-container .login button {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+  padding: .7em 3em;
+  width: 90%;
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1rem;
+}
+
+/* Image Component */
+.bg-img {
+  background-image: url('/public/images/image-hero-mobile.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 340px;
+  margin-bottom: 1em;
+}
+
+/* Text Component */
+.text {
+  padding-top: 1em;
+}
+
+.text h1 {
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+.text p {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2em;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  line-height: 27px;
+}
+.text button {
+  background: hsl(0, 0%, 8%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.brands {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brands img {
+  width: 20%;
 }

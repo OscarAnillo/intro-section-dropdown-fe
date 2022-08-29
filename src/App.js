@@ -1,11 +1,17 @@
+import ImageComponent from './components/image-component';
+import NavBarComponent from './components/nav-component';
+import TextComponent from './components/text-component';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h2>Oscar Anillo</h2>
-      <p>Web UI Developer</p>
+      <NavBarComponent />
+      <div>
+        <ImageComponent />
+        <TextComponent />
+      </div>
     </div>
   );
 }
