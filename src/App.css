@@ -18,6 +18,11 @@
 .section-nav {
   margin-top: 25px;
 }
+
+.section-nav .container-nav {
+  display: none;
+}
+
 .nav-row {
   display: flex;
   justify-content: space-between;
@@ -139,4 +144,81 @@
 
 .brands img {
   width: 20%;
+}
+
+@media(min-width:1000px){
+  .section-nav .container-nav {
+    display: block;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row div {
+    /* border: 1px solid green; */
+    padding-right: 1.5em;
+  }
+  
+  .row-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row-login div {
+    padding-left: 1.5em;
+  }
+  .row-login button {
+    background-color: #fff;
+    border: 2px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 8%);
+    padding: 1em 1.5em;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
+  }
+
+  .nav-row {
+    display: none;
+  }
+  .features-desktop {
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    width: 140px;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px rgb(230, 230, 230);
+  }
+  .features-desktop li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1em auto;
+  }
+  .company-desktop {
+    position: absolute;
+    top: 6%;
+    left: 25%;
+    width: 130px;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px rgb(230, 230, 230);
+  }
+  .company-desktop li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1em auto;
+  }
 }
