@@ -30,7 +30,7 @@
   top: -25px;
   right: 0px;
   width: 65%;
-  background: hsl(0, 0%, 98%);
+  background: #fff;
   transition: all 1s ease;
 }
 .inner-menu-container {
