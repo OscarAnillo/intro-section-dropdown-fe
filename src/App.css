@@ -221,4 +221,130 @@
     width: 80%;
     margin: 1em auto;
   }
+  .App-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 5em;
+  }
+  
+/* Image Component */
+.bg-img {
+  background-image: url('/public/images/image-hero-desktop.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 640px;
+  margin-bottom: 1em;
+}
+
+/* Text Component */
+.text {
+  padding-top: 0;
+  padding-left: 2em;
+  text-align: left;
+  width: 45%;
+}
+
+.text h1 {
+  font-size: 4rem;
+  padding-bottom: .5em;
+  width: 100%;
+  margin: auto;
+}
+.text p {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 2em;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  line-height: 27px;
+}
+.text button {
+  background: hsl(0, 0%, 8%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.brands {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brands img {
+  width: 20%;
+}
+}
+
+@media(min-width: 1440px) {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row div {
+    padding-right: 5em;
+  }
+  .row-login div {
+    padding-left: 5em;
+  }
+
+  .features-desktop {
+    left: 10%;
+  }
+  .company-desktop {
+    left: 20%;
+  }
+  .App-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    max-width: 1440px;
+    margin: 7em auto;
+  }
+
+/* Text Component */
+.text {
+  padding-left: 0px;
+  width: 50%;
+}
+
+.text h1 span {
+  padding-right: 5em;
+}
+
+.text h1 {
+  font-size: 5rem;
+}
+.text p {
+  width: 60%;
+  margin: 0px;
+  font-size: 18px;
+}
+.text button {
+  background: #fff;
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+  border-radius: 10px;
+  padding: 1.5em 2em;
+  margin-bottom: 60px;
+}
+.brands {
+  width: 70%;
+  margin: 0px;
+}
+
+.brands img {
+  width: 20%;
+}
 }

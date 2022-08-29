@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <NavBarComponent />
-      <div>
+      <div className='App-row'>
         <ImageComponent />
         <TextComponent />
       </div>

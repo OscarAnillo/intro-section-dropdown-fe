@@ -1,7 +1,7 @@
 export default function TextComponent(){
     return (
         <div className="text">
-            <h1>Make remote work</h1>
+            <h1><span>Make</span> remote work</h1>
             <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
             <button>Learn more</button>
             <div className="brands">
