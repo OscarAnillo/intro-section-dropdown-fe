@@ -29,7 +29,7 @@
   position: absolute;
   top: -25px;
   right: 0px;
-  width: 60%;
+  width: 65%;
   background: hsl(0, 0%, 98%);
   transition: all 1s ease;
 }
@@ -83,10 +83,60 @@
 .inner-menu-container .login button {
   border: 2px solid hsl(0, 0%, 41%);
   border-radius: 15px;
-  padding: .9em 3em;
+  padding: .7em 3em;
   width: 90%;
   background: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 41%);
   font-family: 'Epilogue', sans-serif;
   font-size: 1rem;
+}
+
+/* Image Component */
+.bg-img {
+  background-image: url('/public/images/image-hero-mobile.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 340px;
+  margin-bottom: 1em;
+}
+
+/* Text Component */
+.text {
+  padding-top: 1em;
+}
+
+.text h1 {
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+.text p {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2em;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  line-height: 27px;
+}
+.text button {
+  background: hsl(0, 0%, 8%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.brands {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brands img {
+  width: 20%;
 }
