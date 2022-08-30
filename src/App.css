@@ -199,7 +199,7 @@
   }
   .features-desktop {
     position: absolute;
-    top: 6%;
+    top: 100%;
     left: 7%;
     width: 140px;
     padding: 1em;
@@ -221,7 +221,7 @@
   }
   .company-desktop {
     position: absolute;
-    top: 6%;
+    top: 100%;
     left: 25%;
     width: 130px;
     padding: 1em;
