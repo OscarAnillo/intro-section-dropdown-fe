@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue:wght@500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue:wght@500;700&display=swap");
 
 * {
   margin: 0;
@@ -10,7 +9,7 @@
 
 .App {
   text-align: center;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   position: relative;
 }
 
@@ -66,7 +65,7 @@
   width: 55%;
   margin: 1em auto;
 }
-.inner-menu-container .company{
+.inner-menu-container .company {
   text-align: center;
   padding-bottom: 0px;
 }
@@ -83,22 +82,22 @@
   padding: 1em 0;
 }
 .inner-menu-container .login p {
-  padding-bottom: .7em;
+  padding-bottom: 0.7em;
 }
 .inner-menu-container .login button {
   border: 2px solid hsl(0, 0%, 41%);
   border-radius: 15px;
-  padding: .7em 3em;
+  padding: 0.7em 3em;
   width: 90%;
   background: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 41%);
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-size: 1rem;
 }
 
 /* Image Component */
 .bg-img {
-  background-image: url('/public/images/image-hero-mobile.png');
+  background-image: url("/public/images/image-hero-mobile.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -130,7 +129,7 @@
   border: none;
   border-radius: 10px;
   padding: 1em 1.5em;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-weight: 700;
   margin-bottom: 60px;
 }
@@ -146,7 +145,7 @@
   width: 20%;
 }
 
-@media(min-width:1000px){
+@media (min-width: 1000px) {
   .section-nav .container-nav {
     display: block;
     width: 90%;
@@ -155,17 +154,19 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .row div {
-    /* border: 1px solid green; */
     padding-right: 1.5em;
   }
-  
+  .row div:hover {
+    cursor: pointer;
+  }
+
   .row-login {
     display: flex;
     align-items: center;
@@ -174,14 +175,23 @@
   .row-login div {
     padding-left: 1.5em;
   }
+  .row-login div:hover {
+    cursor: pointer;
+  }
   .row-login button {
     background-color: #fff;
     border: 2px solid hsl(0, 0%, 8%);
     border-radius: 10px;
     color: hsl(0, 0%, 8%);
     padding: 1em 1.5em;
-    font-family: 'Epilogue', sans-serif;
+    font-family: "Epilogue", sans-serif;
     font-weight: 700;
+    transition: all .3s;
+  }
+  .row-login button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+    color: #fff;
   }
 
   .nav-row {
@@ -189,7 +199,7 @@
   }
   .features-desktop {
     position: absolute;
-    top: 100%;
+    top: 6%;
     left: 7%;
     width: 140px;
     padding: 1em;
@@ -197,6 +207,11 @@
     border-radius: 10px;
     box-shadow: 3px 5px 15px rgb(230, 230, 230);
   }
+
+  .features-desktop:hover {
+    cursor: pointer;
+  }
+
   .features-desktop li {
     display: flex;
     align-items: center;
@@ -206,7 +221,7 @@
   }
   .company-desktop {
     position: absolute;
-    top: 100%;
+    top: 6%;
     left: 25%;
     width: 130px;
     padding: 1em;
@@ -228,64 +243,70 @@
     flex-direction: row-reverse;
     margin-top: 5em;
   }
-  
-/* Image Component */
-.bg-img {
-  background-image: url('/public/images/image-hero-desktop.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 640px;
-  margin-bottom: 1em;
+
+  /* Image Component */
+  .bg-img {
+    background-image: url("/public/images/image-hero-desktop.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 640px;
+    margin-bottom: 1em;
+  }
+
+  /* Text Component */
+  .text {
+    padding-top: 0;
+    padding-left: 2em;
+    text-align: left;
+    width: 45%;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+    padding-bottom: 0.5em;
+    width: 100%;
+    margin: auto;
+  }
+  .text p {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2em;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .text button {
+    background: hsl(0, 0%, 8%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    margin-bottom: 60px;
+    transition: all .3s;
+  }
+  .text button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+    color: #fff;
+  }
+  .brands {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brands img {
+    width: 20%;
+  }
 }
 
-/* Text Component */
-.text {
-  padding-top: 0;
-  padding-left: 2em;
-  text-align: left;
-  width: 45%;
-}
-
-.text h1 {
-  font-size: 4rem;
-  padding-bottom: .5em;
-  width: 100%;
-  margin: auto;
-}
-.text p {
-  width: 100%;
-  margin: auto;
-  padding-bottom: 2em;
-  color: hsl(0, 0%, 41%);
-  font-weight: 500;
-  line-height: 27px;
-}
-.text button {
-  background: hsl(0, 0%, 8%);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 1em 1.5em;
-  font-family: 'Epilogue', sans-serif;
-  font-weight: 700;
-  margin-bottom: 60px;
-}
-.brands {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brands img {
-  width: 20%;
-}
-}
-
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
   .row {
     display: flex;
     align-items: center;
@@ -313,38 +334,38 @@
     margin: 7em auto;
   }
 
-/* Text Component */
-.text {
-  padding-left: 0px;
-  width: 50%;
-}
+  /* Text Component */
+  .text {
+    padding-left: 0px;
+    width: 50%;
+  }
 
-.text h1 span {
-  padding-right: 5em;
-}
+  .text h1 span {
+    padding-right: 5em;
+  }
 
-.text h1 {
-  font-size: 5rem;
-}
-.text p {
-  width: 60%;
-  margin: 0px;
-  font-size: 18px;
-}
-.text button {
-  background: #fff;
-  color: hsl(0, 0%, 8%);
-  border: 1px solid hsl(0, 0%, 8%);
-  border-radius: 10px;
-  padding: 1.5em 2em;
-  margin-bottom: 60px;
-}
-.brands {
-  width: 70%;
-  margin: 0px;
-}
+  .text h1 {
+    font-size: 5rem;
+  }
+  .text p {
+    width: 60%;
+    margin: 0px;
+    font-size: 18px;
+  }
+  .text button {
+    background: #fff;
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+    padding: 1.5em 2em;
+    margin-bottom: 60px;
+  }
+  .brands {
+    width: 70%;
+    margin: 0px;
+  }
 
-.brands img {
-  width: 20%;
-}
+  .brands img {
+    width: 20%;
+  }
 }

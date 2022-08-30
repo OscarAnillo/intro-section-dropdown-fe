@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import 'animate.css';
 
 export default function NavBarComponent() {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,7 +18,7 @@ export default function NavBarComponent() {
   })
 
   return (
-    <section className="section-nav animate__animated animate__backInDown">
+    <section className="section-nav">
     <div className="container-nav">
     <div className="row">
       <div>
